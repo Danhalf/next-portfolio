@@ -10,12 +10,20 @@
     @apply text-[#efe];
   }
 
+  .bg-primary {
+    @apply bg-[#efe];
+  }
+
+  .bg-secondary {
+    @apply bg-[#111827];
+  }
+
   .button-gradient {
     @apply bg-gradient-to-r from-[#182717] to-[#9fd463] transition-all duration-700 bg-size-200 bg-pos-0 hover:bg-pos-100 hover:from-[#9fd463] hover:to-[#182717];
   }
 
   body {
-    @apply bg-[#efe] text-primary tracking-wide;
+    @apply bg-primary text-primary tracking-wide;
   }
 
   h1,
@@ -35,6 +43,10 @@
   }
   h3 {
     @apply text-2xl sm:text-3xl md:text-4xl;
+  }
+
+  li {
+    @apply cursor-pointer;
   }
 
   .button-primary {
