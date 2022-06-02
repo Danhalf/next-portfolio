@@ -2,13 +2,14 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
+import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
 
 const Navbar = () => {
   return (
     <div className="fixed w-full h-40 shadow-xl z-50 bg-gray-900">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Image
-          src="/../public/assets/as_logo_transparent.png"
+          src="/../public/assets/logo_transparent.png"
           width="260"
           height="140"
           alt="logo"
@@ -51,13 +52,13 @@ const Navbar = () => {
           <div>
             <div className="flex justify-between items-center  border-gray-900 pb-8">
               <Image
-                src="/../public/assets/as_logo_transparent.png"
-                width="140"
+                src="/../public/assets/logo_white.png"
+                width="120"
                 height="120"
                 alt="logo"
               />
 
-              <div className="rounded-full text-secondary transition-all duration-500 hover:translate-y-1 shadow-lg hover:shadow-gray-900 border-t-gray-400  hover:border-t-white border shadow-white p-3 cursor-pointer">
+              <div className="button-rounded">
                 <AiOutlineClose size={25} />
               </div>
             </div>
@@ -93,6 +94,19 @@ const Navbar = () => {
                 </li>
               </Link>
             </ul>
+            <div className="pt-40">
+              <p className="uppercase tracking-widest text-secondary">
+                Let's connect
+              </p>
+              <ul className="text-secondary flex">
+                {/* <li className="m-4 flex items-center justify-center p-4 button-rounded">
+                  <FaLinkedinIn size={50} />
+                </li> */}
+                <li className="m-4 flex items-center justify-center p-4 button-rounded">
+                  <FaGithub size="100%" spin />
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
