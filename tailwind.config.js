@@ -12,6 +12,20 @@ module.exports = {
         'pos-0': '0% 0%',
         'pos-100': '100% 100%',
       },
+      keyframes: {
+        'slide-r': {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(0)' },
+        },
+        'slide-l': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+      },
+      animation: {
+        'slide-r': 'slide-r 1s ease-in-out',
+        'slide-l': 'slide-l 1s ease-in-out',
+      },
     },
   },
   plugins: [],
