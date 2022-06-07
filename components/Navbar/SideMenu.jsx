@@ -25,9 +25,9 @@ const SideMenu = ({ isMenuOpen, updateIsMenuOpen, linkList, socialsList }) => (
             <AiOutlineClose onClick={() => updateIsMenuOpen(false)} size={25} />
           </button>
         </div>
-        <div className="text-right text-secondary border-b border-white ">
+        <blockquote className="text-right text-secondary border-b border-white ">
           The doer alone learneth.
-        </div>
+        </blockquote>
       </div>
       <div className="flex flex-col py-4">
         <ul className="uppercase  mt-10">
