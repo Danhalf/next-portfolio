@@ -1,6 +1,6 @@
 import { BsPersonLinesFill } from 'react-icons/bs';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
-import { AiOutlineMail } from 'react-icons/ai';
+import { MdAlternateEmail } from 'react-icons/md';
 
 export const linkList = [
   { title: 'Home', link: '/' },
@@ -20,7 +20,7 @@ export const socialsList = [
     link: '#',
   },
   {
-    icon: AiOutlineMail,
+    icon: MdAlternateEmail,
     link: '#',
   },
   {

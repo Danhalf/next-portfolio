@@ -21,12 +21,15 @@ const SideMenu = ({ isMenuOpen, updateIsMenuOpen, linkList, socialsList }) => (
             alt="logo"
           />
 
-          <button className="button-rounded">
-            <AiOutlineClose onClick={() => updateIsMenuOpen(false)} size={25} />
+          <button
+            onClick={() => updateIsMenuOpen(false)}
+            className="button-rounded"
+          >
+            <AiOutlineClose size={25} />
           </button>
         </div>
-        <blockquote className="text-right text-secondary border-b border-white ">
-          The doer alone learneth.
+        <blockquote className="text-right text-secondary border-b border-white">
+          <i>The doer alone learneth.</i>
         </blockquote>
       </div>
       <div className="flex flex-col py-4">

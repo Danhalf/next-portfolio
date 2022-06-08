@@ -1,6 +1,7 @@
 import Head from 'next/head';
 import Navbar from '../components/Navbar/Navbar';
-import About from '../components/About/About';
+import Main from '../components/Main/Main';
+import { socialsList } from '../store/store';
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <About />
+      <Main socialsList={socialsList} />
     </>
   );
 }

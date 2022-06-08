@@ -24,14 +24,9 @@ const Navbar = () => {
           <ul className="hidden md:flex">
             {linkList.map(({ link, title }) => (
               <Link key={link + title} href={link}>
-                {/* <li className="px-5 text-secondary test-sm transition-all uppercase border-b border-slate-700 overflow-hidden hover:border-white hover:-m-0.5 hover:-translate-y-0.5"> */}
-                <li>
-                  <button className="button-rounded mx-3 w-28 ">
-                    {' '}
-                    {title}{' '}
-                  </button>
+                <li className="px-5 text-secondary test-sm transition-all uppercase border-b border-slate-700 overflow-hidden hover:border-white hover:-m-0.5 hover:-translate-y-0.5">
+                  {title}
                 </li>
-                {/* </li> */}
               </Link>
             ))}
           </ul>
